@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0b0c2a;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: #11134d;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+    font-size: 1.02rem;
+    text-shadow: 0 0 5px #ffd90082;
+}
+
+.left {
+    font-size: 1.8rem;
+}
+
+/* SECTION SPACING */
+section {
+    margin-top: 155px;
+    margin-bottom: -180px;
+    padding: 31px 0 7px 0;
+}
+
+/* TITLES */
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #6bc6ff;
+    margin: 60px 0 27px;
+}
+
+/* HERO SECTION */
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px 0;
+}
+
+.firstSection>div {
+    width: 30%;
+}
+
+.leftSection {
+    font-size: 3rem;
+}
+
+.leftSection .buttons {
+    padding: 50px 0;
+}
+
+.leftSection .btn {
+    background: #1e2167;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 500;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.rightSection img {
+    width: 80%;
+}
+
+.purple,
+#element {
+    color: #6bc6ff;
+}
+
+.text-gray {
+    color: gray;
+}
+
+/* HORIZONTAL LINE */
+main hr {
+    border: 0;
+    background: #6bc6ff;
+    height: 1.2px;
+    margin: 40px 84px;
+}
+
+/* CERTIFICATION SECTION */
+.secondSection {
+    max-width: 80vw;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.secondSection h1 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.secondSection .box {
+    background: white;
+    width: 83vw;
+    height: 2px;
+    margin: 56px 0;
+    display: flex;
+}
+
+.secondSection .vertical {
+    height: 93px;
+    width: 1px;
+    background-color: white;
+    margin: 0 120px;
+}
+
+.image-top {
+    width: 23px;
+    position: relative;
+    top: -32px;
+    left: -9px;
+}
+
+.vertical-title {
+    position: relative;
+    top: 75px;
+    width: 150px;
+}
+
+.vertical-desc {
+    position: relative;
+    top: 80px;
+    color: gray;
+    width: 174px;
+    font-size: 10px;
+    line-height: 1.1;
+    white-space: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+/* SKILLS */
+.skillsSection .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    font-size: 1rem;
+    color: white;
+}
+
+.skills-list span {
+    border: 1px solid #6bc6ff;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+/* PROJECTS */
+.projectsSection .project-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    color: white;
+}
+
+.project {
+    background-color: #11134d;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.project h3 {
+    color: #6bc6ff;
+}
+
+.project a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* TESTIMONIALS */
+.testimonialsSection blockquote {
+    text-align: center;
+    font-style: italic;
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+}
+
+.testimonialsSection cite {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #999;
+}
+
+/* CONTACT SECTION */
+.contactSection {
+    border-bottom: 2px solid transparent;
+    padding-bottom: 40px;
+    margin-bottom: 60px;
+}
+
+.contactSection form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+    gap: 15px;
+    padding: 20px;
+}
+
+.contactSection input,
+.contactSection textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+.contactSection button {
+    background-color: #6bc6ff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* FOOTER */
+footer {
+    background-color: #0e0e1a;
+    padding: 17px 0;
+    margin-top: 15px;
+}
+
+.footer {
+    display: flex;
+    padding: 20px 80px;
+    justify-content: space-evenly;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer>div {
+    width: 245px;
+    margin: 20px 0;
+}
+
+.footer h4 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #6bc6ff;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-rights {
+    text-align: center;
+    margin-top: 40px;
+    color: gray;
+    font-size: 0.9rem;
+}
+
+body.light-theme {
+    background-color: #f1f1f1;
+    color: #111;
+}
+
+body.light-theme nav {
+    background-color: #ffffff;
+}
+
+body.light-theme .section-title,
+body.light-theme .project h3 {
+    color: #003566;
+}
+
+body.light-theme .skills-list span,
+body.light-theme .project,
+body.light-theme footer {
+    background-color: #e0e0e0;
+    color: #111;
+}
+
+body.light-theme .btn {
+    background-color: #dcdcdc;
+    color: #000;
+    border: 1px solid #333;
+}
+
+body.light-theme a {
+    color: #003566;
+}
+
+/* Theme Toggle Button Style */
+#theme-toggle {
+    background: transparent;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    padding: 0 5px;
+    margin-left: 10px;
+    transition: transform 0.2s ease;
+}
+
+#theme-toggle:hover {
+    transform: scale(1.2);
+}
+
+body.light-theme #theme-toggle {
+    color: #111;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+    /* was 23px */
+}
+
+.rightSection img {
+    width: 400px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 20%;
+    border: 4px solid #6bc6ff;
+    box-shadow: 0 0 15px #6bc6ff88;
+}
+
+/* About Me Section */
+.aboutSection {
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+    padding: 135px 30px; 
+    padding-bottom: 25px;
+    margin-bottom: -198px;
+    line-height: 1.6; 
+}
+
+.educationSection {
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+    padding: 149px 30px;
+    padding-bottom: 25px;
+    margin-bottom: -198px;
+    line-height: 1.6; 
+}                     

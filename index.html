@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Aakash - Developer Portfolio</title>
+    <link rel="icon" href="image/imag.png" type="image/x-icon" height="50">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="home">
+        <nav>
+            <div class="left">Aakash's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+
+                    <li><button id="theme-toggle" class="btn">🌙</button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Aakash</span>
+                <div>and I am a Passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+
+                    <a href="https://www.linkedin.com/in/aakashthakur007"><img
+                            src="data:image/png;base64,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"
+                            height="50"></a>
+
+                    <a href="https://github.com/"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyYZl4Yf0aGwj8FPEOmjhG1ODkzi6gjbB9lw&s"
+                            height="50"></a>
+
+                    <a href="image/Developer-1.png">
+                        <button class="btn">Download Resume</button>
+                    </a>
+
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="image/Aakash.png" alt="Aakash profile image">
+            </div>
+        </section>
+        <hr>
+
+        <section id="about" class="secondSection">
+            <span id="certifications" class="text-gray"> What I have done </span>
+            <h1>Certification</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="image/javascript.png">
+                    <div class="vertical-title">
+                        🧾 JavaScript Certification (2025)
+                    </div>
+                    <div class="vertical-desc">
+                        Certified in JavaScript by Certiport (Pearson VUE) on May 17, 2025, under verification code
+                        epRH-4wbN,
+                        demonstrating core proficiency in scripting and programming fundamentals.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="image/DCA.webp">
+                    <div class="vertical-title">
+                        🧾 DCA + CSS Diploma (2020-2021)
+                    </div>
+                    <div class="vertical-desc">
+                        Completed the Diploma in Computer Applications and CSS, covering fundamentals of
+                        computing, MS Office tools, web styling techniques, and basic automation processes
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="image/MSOffice.jpeg" alt="MSOffice">
+                    <div class="vertical-title">
+                        🧾 MS Office (Word, Excel, PowerPoint)
+                    </div>
+                    <div class="vertical-desc">
+
+                        Proficient in MS Word, Excel, and PowerPoint. Applied skills to create professional documents,
+                        automate
+                        tasks using spreadsheets, and design impactful presentations for academic and administrative
+                        needs.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="image/WebFoundations.png" alt="WebFoundations">
+                    <div class="vertical-title">
+                        🌐 Web Foundations (2020–2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Learned front-end technologies while earning a
+                        B.Sc. in IT. Developed multiple static and dynamic webpages. Participated in web-based project
+                        labs.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="image/DataScience.png">
+                    <div class="vertical-title">
+                        🧾 Data Science Foundation. (2022-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Explored data handling, visualization, and basic machine learning models using
+                        structured data. Applied these to mini-projects using Python and tools like Excel.
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="aboutSection">
+            <h1 class="section-title">About Me</h1>
+            <p>
+                Hi, I'm <b>Aakash</b> — a passionate and motivated MCA student with a background in
+                <b>B.Sc. Information Technology</b>.I'm deeply interested in software development
+                and web technologies, and I enjoy building responsive, user-friendly websites.
+            </p>
+            <p>
+                I have hands-on experience with <b>HTML, CSS, JavaScript, and Java</b>, and I’m
+                currently expanding my knowledge in modern frameworks like <b>React</b>.
+                I love turning ideas into reality through clean and efficient code.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skillsSection">
+            <h1 class="section-title">My Skills</h1>
+            <div class="skills-list">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+                <span>Python</span>
+                <span>Git & GitHub</span>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projectsSection">
+            <h1 class="section-title">Projects</h1>
+            <div class="project-box">
+                <div class="project">
+                    <h3>Personal Portfolio</h3>
+                    <p>A responsive personal portfolio built using HTML, CSS, and JavaScript.</p>
+                    <a href="https://github.com/">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>E-commerce Demo</h3>
+                    <p>Frontend shopping website with cart functionality using JavaScript.</p>
+                    <a href="https://github.com/">View Project</a>
+                </div>
+
+
+                <!-- Row 2 -->
+                <div class="project">
+                    <h3>To-Do App</h3>
+                    <p>A functional To-Do list using JavaScript and LocalStorage to persist data.<br>
+                        <a href="to-do-app.pj/index.html" target="_blank">View Project</a>
+                    </p>
+
+                </div>
+                <div class="project">
+                    <h3>Calculator</h3>
+                    <p>A web-based calculator with a clean UI, built using vanilla JavaScript.<br>
+                        <a href="calculater.pj/index.html">View Project</a>
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="education" class="educationSection">
+            <h1 class="section-title">Education</h1>
+            <p>
+                Master of Computer Applications (MCA) - Parul University (2024–2026).
+            </p>
+            <p>
+                Bachelor of Science in Information Technology (B.Sc. IT) - University of Mumbai (2020–2023).
+            </p>
+            <p>
+                Junior College (11th-12th Science) - National Junior College (2018–2020).
+            </p>
+            <p>
+                School (10th) - National College.
+            </p>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonialsSection">
+            <h1 class="section-title">Testimonials</h1>
+            <blockquote>
+                "Aakash is a highly skilled and dedicated developer. His projects show great attention to detail and
+                creativity."
+                <cite>– Mentor / Peer Review</cite>
+            </blockquote>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="contactSection">
+            <h1 class="section-title">Contact Me</h1>
+
+            <form action="mailto:aakashkumarsingh2001@gmail.com" method="POST" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button><br>
+            </form>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <!-- dev.flex = <div class="flex"></div>  -->
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Aakash's Developer Portfolio</h3>
+            </div>
+
+            <div class="footer-second">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-third">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="Developer-1.png">Download Resume</a>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-fourth">
+                <h4>Social</h4>
+                <ul>
+                    <li><a href="https://github.com/">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/aakashthakur007">LinkedIn</a></li>
+                    <li><a href="https://leetcode.com/u/AakashSingh007/">LeetCode</a></li>
+                    <li><a href="mailto:aakashkumarsingh2001@gmail.com">Email</a></li>
+                    <li><a href="https://www.instagram.com/aakash___rajput07/">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-rights">
+            Copyright&#169; aakashsportfolio.com | All rights reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
